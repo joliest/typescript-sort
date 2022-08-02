@@ -1,7 +1,13 @@
+import { CharactersCollections } from './CharactersCollection';
 import { NumbersCollection } from './NumbersCollection';
-import { Sorter } from './sorter';
+import { Sorter } from './Sorter';
 
-const numbersCollection = new NumbersCollection([10, 3, -5, 0]);
-const sorter = new Sorter(numbersCollection);
+// const numbersCollection = new NumbersCollection([10, 3, -5, 0]);
+// const sorter = new Sorter(numbersCollection);
+// sorter.sort();
+// console.log(numbersCollection.data);
+
+const charactersCollections = new CharactersCollections('Xaayb');
+const sorter = new Sorter(charactersCollections);
 sorter.sort();
-console.log(numbersCollection.data);
+console.log(charactersCollections.data);
